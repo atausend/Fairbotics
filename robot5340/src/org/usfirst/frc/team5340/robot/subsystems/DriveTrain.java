@@ -49,7 +49,7 @@ public class DriveTrain extends Subsystem {
     }
     
     public void mecaDrive() {
-    	driveTrain.mecanumDrive_Cartesian(Robot.oi.driveStick2.getX() * 1.0, Robot.oi.driveStick2.getY() * 1.0, Robot.oi.driveStick1.getX() * 1.0, 0);
+    	driveTrain.mecanumDrive_Cartesian(Robot.oi.driveStick2.getX() * 1.0, Robot.oi.driveStick2.getY() * 1.0, Robot.oi.driveStick2.getZ() * 1.0, 0);
     	
 //    	As of right now (11/29/16) there is a negative value assigned to driveStick2's X value, the robot is strafing backwards this is the current fix.
 //    	Above problem has been fixed
